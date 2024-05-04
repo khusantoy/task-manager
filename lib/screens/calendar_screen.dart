@@ -870,52 +870,57 @@ class CalendarScreen extends StatelessWidget {
         padding: const EdgeInsets.all(0),
         child: Container(
           decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(24),
-              topRight: Radius.circular(24),
-            ),
             color: Colors.white,
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                padding: const EdgeInsets.all(15),
-                onPressed: () {},
-                icon: const Icon(
-                  CupertinoIcons.house_fill,
-                  color: Color.fromRGBO(212, 225, 245, 1),
-                  size: 25,
-                ),
+          child: Container(
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(24),
+                topRight: Radius.circular(24),
               ),
-              IconButton(
-                padding: const EdgeInsets.all(15),
-                onPressed: () {},
-                icon: const Icon(
-                  CupertinoIcons.calendar_today,
-                  color: Color.fromRGBO(84, 81, 214, 1),
-                  size: 25,
+              color: Colors.white,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  padding: const EdgeInsets.all(15),
+                  onPressed: () {},
+                  icon: const Icon(
+                    CupertinoIcons.house_fill,
+                    color: Color.fromRGBO(212, 225, 245, 1),
+                    size: 25,
+                  ),
                 ),
-              ),
-              IconButton(
-                padding: const EdgeInsets.all(15),
-                onPressed: () {},
-                icon: const Icon(
-                  CupertinoIcons.chat_bubble_fill,
-                  color: Color.fromRGBO(212, 225, 245, 1),
-                  size: 25,
+                IconButton(
+                  padding: const EdgeInsets.all(15),
+                  onPressed: () {},
+                  icon: const Icon(
+                    CupertinoIcons.calendar_today,
+                    color: Color.fromRGBO(84, 81, 214, 1),
+                    size: 25,
+                  ),
                 ),
-              ),
-              IconButton(
-                padding: const EdgeInsets.all(15),
-                onPressed: () {},
-                icon: const Icon(
-                  CupertinoIcons.person_alt,
-                  color: Color.fromRGBO(212, 225, 245, 1),
-                  size: 25,
+                IconButton(
+                  padding: const EdgeInsets.all(15),
+                  onPressed: () {},
+                  icon: const Icon(
+                    CupertinoIcons.chat_bubble_fill,
+                    color: Color.fromRGBO(212, 225, 245, 1),
+                    size: 25,
+                  ),
                 ),
-              )
-            ],
+                IconButton(
+                  padding: const EdgeInsets.all(15),
+                  onPressed: () {},
+                  icon: const Icon(
+                    CupertinoIcons.person_alt,
+                    color: Color.fromRGBO(212, 225, 245, 1),
+                    size: 25,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
