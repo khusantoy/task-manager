@@ -7,7 +7,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -67,7 +66,6 @@ class HomeScreen extends StatelessWidget {
             )
           ],
         ),
-        
       ),
       body: Padding(
         padding: const EdgeInsets.all(18),
@@ -364,36 +362,41 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(0),
         child: Container(
           decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(24),
-              topRight: Radius.circular(24),
-            ),
             color: Colors.white,
           ),
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Icon(
-                CupertinoIcons.house_fill,
-                color: Color.fromRGBO(84, 81, 214, 1),
-                size: 25,
+          child: Container(
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(24),
+                topRight: Radius.circular(24),
               ),
-              Icon(
-                CupertinoIcons.calendar_today,
-                color: Color.fromRGBO(212, 225, 245, 1),
-                size: 25,
-              ),
-              Icon(
-                CupertinoIcons.chat_bubble_fill,
-                color: Color.fromRGBO(212, 225, 245, 1),
-                size: 25,
-              ),
-              Icon(
-                CupertinoIcons.person_alt,
-                color: Color.fromRGBO(212, 225, 245, 1),
-                size: 25,
-              ),
-            ],
+              color: Colors.white,
+            ),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(
+                  CupertinoIcons.house_fill,
+                  color: Color.fromRGBO(84, 81, 214, 1),
+                  size: 25,
+                ),
+                Icon(
+                  CupertinoIcons.calendar_today,
+                  color: Color.fromRGBO(212, 225, 245, 1),
+                  size: 25,
+                ),
+                Icon(
+                  CupertinoIcons.chat_bubble_fill,
+                  color: Color.fromRGBO(212, 225, 245, 1),
+                  size: 25,
+                ),
+                Icon(
+                  CupertinoIcons.person_alt,
+                  color: Color.fromRGBO(212, 225, 245, 1),
+                  size: 25,
+                ),
+              ],
+            ),
           ),
         ),
       ),
