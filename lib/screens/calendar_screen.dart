@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:task_manager_mobile_app/screens/home_screen.dart';
 
 class CalendarScreen extends StatelessWidget {
   @override
@@ -11,11 +12,17 @@ class CalendarScreen extends StatelessWidget {
         leading: IconButton(
           padding: const EdgeInsets.all(12),
           style: IconButton.styleFrom(
-              side: const BorderSide(
-            color: Color.fromARGB(54, 4, 4, 21),
-            width: 1,
-          )),
-          onPressed: () {},
+            side: const BorderSide(
+              color: Color.fromARGB(54, 4, 4, 21),
+              width: 1,
+            ),
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
+          },
           icon: const Icon(
             Icons.arrow_back_ios_rounded,
             size: 25,
@@ -893,7 +900,14 @@ class CalendarScreen extends StatelessWidget {
               children: [
                 IconButton(
                   padding: const EdgeInsets.all(15),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeScreen(),
+                      ),
+                    );
+                  },
                   icon: const Icon(
                     CupertinoIcons.house_fill,
                     color: Color.fromRGBO(212, 225, 245, 1),

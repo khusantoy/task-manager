@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:task_manager_mobile_app/screens/calendar_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -394,7 +395,14 @@ class HomeScreen extends StatelessWidget {
                 ),
                 IconButton(
                   padding: const EdgeInsets.all(15),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CalendarScreen(),
+                      ),
+                    );
+                  },
                   icon: const Icon(
                     CupertinoIcons.calendar_today,
                     color: Color.fromRGBO(212, 225, 245, 1),

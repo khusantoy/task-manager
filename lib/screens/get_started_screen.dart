@@ -1,10 +1,8 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:task_manager_mobile_app/screens/home_screen.dart';
 
 class GetStartedScreen extends StatelessWidget {
+  const GetStartedScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,7 +60,7 @@ class GetStartedScreen extends StatelessWidget {
                           width: 25,
                           height: 5,
                           decoration: BoxDecoration(
-                              color: Color.fromRGBO(84, 81, 214, 1),
+                              color: const Color.fromRGBO(84, 81, 214, 1),
                               borderRadius: BorderRadius.circular(10)),
                         ),
                         const SizedBox(
@@ -153,7 +151,14 @@ class GetStartedScreen extends StatelessWidget {
                                 ),
                                 backgroundColor: Colors.transparent,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomeScreen(),
+                                  ),
+                                );
+                              },
                               child: const Text(
                                 "Get Started",
                                 style: TextStyle(
