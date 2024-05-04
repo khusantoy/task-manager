@@ -7,6 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -66,6 +67,7 @@ class HomeScreen extends StatelessWidget {
             )
           ],
         ),
+        
       ),
       body: Padding(
         padding: const EdgeInsets.all(18),
@@ -146,9 +148,9 @@ class HomeScreen extends StatelessWidget {
                                   color: Colors.white,
                                 ),
                                 image: const DecorationImage(
-                                  image:
-                                      AssetImage("assets/images/profile.png"),
-                                ),
+                                    image:
+                                        AssetImage("assets/images/person1.jpg"),
+                                    fit: BoxFit.cover),
                                 shape: BoxShape.circle,
                               ),
                             ),
@@ -165,7 +167,8 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 image: const DecorationImage(
                                   image:
-                                      AssetImage("assets/images/profile.png"),
+                                      AssetImage("assets/images/person2.jpg"),
+                                  fit: BoxFit.cover,
                                 ),
                                 shape: BoxShape.circle,
                               ),
