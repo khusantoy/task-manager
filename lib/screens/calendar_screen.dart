@@ -878,6 +878,14 @@ class CalendarScreen extends StatelessWidget {
                 topLeft: Radius.circular(24),
                 topRight: Radius.circular(24),
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromRGBO(0, 0, 0, 0.150),
+                  spreadRadius: 0,
+                  blurRadius: 50,
+                  offset: Offset(0, 3),
+                ),
+              ],
               color: Colors.white,
             ),
             child: Row(
